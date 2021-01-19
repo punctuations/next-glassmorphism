@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap");
+
 html,
 body {
 	padding: 0;
@@ -15,13 +17,41 @@ a {
 	box-sizing: border-box;
 }
 
+::selection {
+	background-color: #25eaaf;
+}
+
 .bg-image {
-	background-image: url(https://picsum.photos/seed/picsum/1920/1080);
+	background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iphonetricks.org%2Fwp-content%2Fuploads%2F2020%2F06%2FmacOS-Big-Sur-wallpaper-2560x1440-1.jpg&f=1&nofb=1);
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-image-dark {
+	background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.idownloadblog.com%2Fwp-content%2Fuploads%2F2020%2F06%2FmacOS-Big-Sur-Vector-Wave-Dark-Wallpaper-iDownloadBlog.jpg&f=1&nofb=1);
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.name {
+	color: transparent;
+	-webkit-text-stroke-width: 0.03rem;
+	-webkit-text-stroke-color: white;
+}
+
+.keyword {
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
 }
 
 .glass {
-	background-color: rgb(223, 211, 209, 0.15);
-	border: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: rgb(209, 134, 39, 0.15);
+	border: 1px solid rgba(253, 242, 229, 0.2);
 	backdrop-filter: blur(40px);
 	-webkit-backdrop-filter: blur(40px);
 }
