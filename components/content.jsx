@@ -1,5 +1,6 @@
 import HomeContent from "../components/homeContent.jsx";
 import AboutContent from "../components/aboutContent.jsx";
+import PricingContent from "../components/pricingContent.jsx";
 
 const Content = ({ type }) => {
 	switch (type) {
@@ -60,6 +61,7 @@ const Content = ({ type }) => {
 						</div>
 					</header>
 					<br />
+					<PricingContent />
 				</div>
 			);
 		case "features":
@@ -94,6 +96,17 @@ const Content = ({ type }) => {
 						</div>
 					</header>
 					<br />
+				</div>
+			);
+		default:
+			return (
+				<div className="absolute top-1/4">
+					<header className="text-white flex text-4xl tracking-tight">
+						<div className="font-normal">
+							Please fix the cases in the switch statement located in
+							/components/content.jsx
+						</div>
+					</header>
 				</div>
 			);
 	}

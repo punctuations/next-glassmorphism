@@ -11,9 +11,12 @@ const Nav = ({ name, logo }) => {
 				</div>
 			</Link>
 
-			{navContent.map((content) => {
+			{navContent.map((content, i) => {
 				return (
-					<div className="duration-500 transition-opacity text-white text-xl opacity-75 hover:opacity-100">
+					<div
+						className="duration-500 transition-opacity text-white text-xl opacity-75 hover:opacity-100"
+						key={i}
+					>
 						<Link href={content.toLowerCase().split(" ")[0]}>{content}</Link>
 					</div>
 				);
