@@ -18,7 +18,8 @@ a {
 }
 
 ::selection {
-	background-color: #25eaaf;
+	background-color: #3dbded;
+	color: #fff;
 }
 
 .bg-image {

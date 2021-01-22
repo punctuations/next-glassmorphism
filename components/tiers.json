@@ -1,0 +1,39 @@
+{
+	"tiers": [
+		{
+			"title": "Base Tier",
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quo. Repellendus dolorem maiores placeat dignissimos voluptatibus fugiat, error necessitatibus. Pariatur odit nam fuga quidem omnis corporis consequuntur delectus ipsum neque.",
+			"price": "Free",
+			"interval": null,
+			"currency": null,
+			"featured": false
+		},
+		{
+			"title": "Express Tier",
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quo. Repellendus dolorem maiores placeat dignissimos voluptatibus fugiat, error necessitatibus. Pariatur odit nam fuga quidem omnis corporis consequuntur delectus ipsum neque.",
+			"symbol": "$",
+			"price": "20.00",
+			"interval": "/mo",
+			"currency": "CAD",
+			"featured": false
+		},
+		{
+			"title": "Professional Tier",
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quo. Repellendus dolorem maiores placeat dignissimos voluptatibus fugiat, error necessitatibus. Pariatur odit nam fuga quidem omnis corporis consequuntur delectus ipsum neque.",
+			"symbol": "$",
+			"price": "30.00",
+			"interval": "/yr",
+			"currency": "CAD",
+			"featured": true
+		},
+		{
+			"title": "Business Tier",
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quo. Repellendus dolorem maiores placeat dignissimos voluptatibus fugiat, error necessitatibus. Pariatur odit nam fuga quidem omnis corporis consequuntur delectus ipsum neque.",
+			"symbol": "$",
+			"price": "45.00",
+			"interval": "/mo",
+			"currency": "CAD",
+			"featured": false
+		}
+	]
+}

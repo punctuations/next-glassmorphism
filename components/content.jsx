@@ -1,6 +1,8 @@
 import HomeContent from "../components/homeContent.jsx";
 import AboutContent from "../components/aboutContent.jsx";
 import PricingContent from "../components/pricingContent.jsx";
+import FeaturesContent from "../components/featuresContent.jsx";
+import CareersContent from "../components/careersContent.jsx";
 
 const Content = ({ type }) => {
 	switch (type) {
@@ -48,16 +50,13 @@ const Content = ({ type }) => {
 			);
 		case "pricing":
 			return (
-				<div className="absolute top-1/4">
+				<div className="absolute left-0 top-1/4 flex flex-col w-full justify-center items-center">
 					<header className="text-white flex text-4xl tracking-tight">
 						<div className="font-normal">
-							<span className="name font-medium">Lorem Ipsum</span>
-							<p className="relative left-1/4">
-								About{" "}
-								<span className="keyword bg-gradient-to-tr to-purple-500 from-pink-500 font-medium tracking-tighter">
-									us
-								</span>
-							</p>
+							<span className="name font-medium">Lorem Ipsum - </span>
+							<span className="keyword bg-gradient-to-tr to-green-400 from-indigo-500 font-medium">
+								Pricing
+							</span>
 						</div>
 					</header>
 					<br />
@@ -66,36 +65,32 @@ const Content = ({ type }) => {
 			);
 		case "features":
 			return (
-				<div className="absolute top-1/4">
+				<div className="absolute left-0 top-1/4 flex flex-col w-full justify-center items-center">
 					<header className="text-white flex text-4xl tracking-tight">
 						<div className="font-normal">
-							<span className="name font-medium">Lorem Ipsum</span>
-							<p className="relative left-1/4">
-								About{" "}
-								<span className="keyword bg-gradient-to-tr to-purple-500 from-pink-500 font-medium tracking-tighter">
-									us
-								</span>
-							</p>
+							<span className="name font-medium">Lorem Ipsum - </span>
+							<span className="keyword bg-gradient-to-tr to-indigo-400 from-yellow-500 font-medium">
+								Features
+							</span>
 						</div>
 					</header>
 					<br />
+					<FeaturesContent />
 				</div>
 			);
 		case "careers":
 			return (
-				<div className="absolute top-1/4">
+				<div className="absolute left-0 top-1/4 flex flex-col w-full justify-center items-center">
 					<header className="text-white flex text-4xl tracking-tight">
 						<div className="font-normal">
-							<span className="name font-medium">Lorem Ipsum</span>
-							<p className="relative left-1/4">
-								About{" "}
-								<span className="keyword bg-gradient-to-tr to-purple-500 from-pink-500 font-medium tracking-tighter">
-									us
-								</span>
-							</p>
+							<span className="keyword bg-gradient-to-tr to-indigo-500 from-green-500 font-medium tracking-tighter">
+								Join
+							</span>
+							<span className="name font-medium"> Lorem Ipsum</span>
 						</div>
 					</header>
 					<br />
+					<CareersContent />
 				</div>
 			);
 		default:
