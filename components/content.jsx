@@ -86,7 +86,7 @@ const Content = ({ type }) => {
 							<span className="keyword bg-gradient-to-tr to-indigo-500 from-green-500 font-medium tracking-tighter">
 								Join
 							</span>
-							<span className="name font-medium"> Lorem Ipsum</span>
+							<span className="name font-medium"> Lorem Ipsum!</span>
 						</div>
 					</header>
 					<br />
