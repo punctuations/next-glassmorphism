@@ -23,7 +23,7 @@ const Main = ({ children }) => {
 						},
 					}}
 					id="main"
-					className="overflow-auto flex flex-col glass p-8 m-6 rounded-xl 2xl:w-3/4 xl:w-3/4 lg:w-3/4 md:w-3/4 sm:w-3/4 w-3/4 2xl:h-3/4 xl:h-3/4 lg:h-3/4 sm:h-3/4 h-3/4 shadow-sm"
+					className="overflow-auto flex flex-col glass p-8 m-6 rounded-xl 2xl:w-3/4 xl:w-3/4 lg:w-3/4 md:w-3/4 sm:w-3/4 w-screen 2xl:h-3/4 xl:h-3/4 lg:h-3/4 sm:h-3/4 h-screen shadow-sm"
 				>
 					{children}
 				</motion.section>
@@ -45,7 +45,7 @@ const Main = ({ children }) => {
 						},
 					}}
 					id="main"
-					className="overflow-auto flex flex-col glass p-8 m-6 rounded-xl 2xl:w-3/4 xl:w-3/4 lg:w-3/4 md:w-3/4 sm:w-3/4 w-3/4 2xl:h-3/4 xl:h-3/4 lg:h-3/4 sm:h-3/4 h-3/4 shadow-sm"
+					className="overflow-auto flex flex-col glass p-8 m-6 rounded-xl 2xl:w-3/4 xl:w-3/4 lg:w-3/4 md:w-3/4 sm:w-3/4 w-screen 2xl:h-3/4 xl:h-3/4 lg:h-3/4 sm:h-3/4 h-screen shadow-sm"
 				>
 					{children}
 				</motion.section>
@@ -68,7 +68,7 @@ const Main = ({ children }) => {
 					},
 				}}
 				id="main"
-				className="overflow-auto flex flex-col glass p-8 m-6 rounded-xl 2xl:w-3/4 xl:w-3/4 lg:w-3/4 md:w-3/4 sm:w-3/4 w-3/4 2xl:h-3/4 xl:h-3/4 lg:h-3/4 sm:h-3/4 h-3/4 shadow-sm"
+				className="overflow-auto flex flex-col glass p-8 m-6 rounded-xl 2xl:w-3/4 xl:w-3/4 lg:w-3/4 md:w-3/4 sm:w-3/4 w-screen 2xl:h-3/4 xl:h-3/4 lg:h-3/4 sm:h-3/4 h-screen shadow-sm"
 			>
 				{children}
 			</motion.section>
