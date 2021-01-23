@@ -8,7 +8,10 @@ const FeaturesContent = () => {
 	{
 		for (const i in Features.features) {
 			features.push(
-				<div className="justify-center flex flex-col flex-grow cursor-default">
+				<div
+					key={i}
+					className="justify-center flex flex-col flex-grow cursor-default"
+				>
 					<header className="text-3xl my-2">
 						{Features.features[i].title}
 					</header>

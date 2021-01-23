@@ -8,7 +8,10 @@ const PricingContent = () => {
 	{
 		for (const i in Tiers.tiers) {
 			tiers.push(
-				<div className="justify-center flex flex-col flex-grow cursor-default">
+				<div
+					key={i}
+					className="justify-center flex flex-col flex-grow cursor-default"
+				>
 					<header className="text-3xl my-2">{Tiers.tiers[i].title}</header>
 					<div className="text-lg text-gray-200 my-2">
 						{Tiers.tiers[i].symbol}

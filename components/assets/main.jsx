@@ -22,7 +22,8 @@ const Main = ({ children }) => {
 							ease: [0.48, 0.15, 0.25, 0.96],
 						},
 					}}
-					className="z-10 flex flex-col glass p-8 m-6 rounded-xl 2xl:w-3/4 xl:w-3/4 lg:w-3/4 md:w-1/2 sm:w-1/2 w-1/2 2xl:h-3/4 xl:h-3/4 lg:h-1/2 sm:h-1/2 h-1/2 shadow-sm"
+					id="main"
+					className="overflow-auto flex flex-col glass p-8 m-6 rounded-xl 2xl:w-3/4 xl:w-3/4 lg:w-3/4 md:w-3/4 sm:w-3/4 w-3/4 2xl:h-3/4 xl:h-3/4 lg:h-3/4 sm:h-3/4 h-3/4 shadow-sm"
 				>
 					{children}
 				</motion.section>
@@ -43,7 +44,8 @@ const Main = ({ children }) => {
 							ease: [0.48, 0.15, 0.25, 0.96],
 						},
 					}}
-					className="z-10 flex flex-col glass p-8 m-6 rounded-xl 2xl:w-3/4 xl:w-3/4 lg:w-3/4 md:w-1/2 sm:w-1/2 w-1/2 2xl:h-3/4 xl:h-3/4 lg:h-1/2 sm:h-1/2 h-1/2 shadow-sm"
+					id="main"
+					className="overflow-auto flex flex-col glass p-8 m-6 rounded-xl 2xl:w-3/4 xl:w-3/4 lg:w-3/4 md:w-3/4 sm:w-3/4 w-3/4 2xl:h-3/4 xl:h-3/4 lg:h-3/4 sm:h-3/4 h-3/4 shadow-sm"
 				>
 					{children}
 				</motion.section>
@@ -65,7 +67,8 @@ const Main = ({ children }) => {
 						ease: [0.48, 0.15, 0.25, 0.96],
 					},
 				}}
-				className="z-10 flex flex-col glass p-8 m-6 rounded-xl 2xl:w-3/4 xl:w-3/4 lg:w-3/4 md:w-1/2 sm:w-1/2 w-1/2 2xl:h-3/4 xl:h-3/4 lg:h-1/2 sm:h-1/2 h-1/2 shadow-sm"
+				id="main"
+				className="overflow-auto flex flex-col glass p-8 m-6 rounded-xl 2xl:w-3/4 xl:w-3/4 lg:w-3/4 md:w-3/4 sm:w-3/4 w-3/4 2xl:h-3/4 xl:h-3/4 lg:h-3/4 sm:h-3/4 h-3/4 shadow-sm"
 			>
 				{children}
 			</motion.section>

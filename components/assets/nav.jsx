@@ -7,6 +7,11 @@ import { motion, AnimatePresence } from "framer-motion";
 const Nav = ({ name, logo }) => {
 	const [menuState, setMenuState] = useState(false);
 
+	const [style, setStyle] = useState({
+		backdropFilter: "",
+		borderBottom: "",
+	});
+
 	useEffect(() => {
 		window.addEventListener("resize", () => {
 			window.innerWidth >= 1024 ? setMenuState(false) : "";
@@ -15,7 +20,7 @@ const Nav = ({ name, logo }) => {
 
 	return (
 		<>
-			<div className="2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden flex-row justify-evenly items-center h-16 w-full">
+			<div className="rounded-md nav-glass z-20 sticky top-0 2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden flex-row justify-evenly items-center h-16 w-full shadow-sm">
 				<Link href="/">
 					<div className="duration-500 transition-opacity inline-flex items-center cursor-pointer hover:opacity-75">
 						<img src={logo} />
@@ -34,14 +39,14 @@ const Nav = ({ name, logo }) => {
 					);
 				})}
 			</div>
-			<div className="2xl:hidden xl:hidden lg:hidden md:flex sm:flex flex flex-row justify-evenly items-center h-16 w-full">
+
+			<div className="rounded-md nav-glass z-20 sticky top-0 2xl:hidden xl:hidden lg:hidden md:flex sm:flex flex flex-row justify-evenly items-center h-16 w-full">
 				<Link href="/">
 					<div className="duration-500 transition-opacity inline-flex items-center cursor-pointer hover:opacity-75">
 						<img src={logo} />
 						<header className="text-3xl font-medium name">{name}</header>
 					</div>
 				</Link>
-
 				<div
 					className="glass p-2 rounded-md cursor-pointer select-none"
 					onClick={() => setMenuState(!menuState)}
@@ -82,30 +87,30 @@ const Nav = ({ name, logo }) => {
 						</svg>
 					)}
 				</div>
+				<AnimatePresence initial={false}>
+					{menuState && (
+						<motion.div
+							className="glass absolute p-3 rounded-lg -top-3/4 flex flex-row z-20"
+							initial={{ opacity: 0, x: -50 }}
+							animate={{ opacity: 1, x: 0 }}
+							exit={{ opacity: 0, x: 50 }}
+						>
+							{navContent.map((content, i) => {
+								return (
+									<div
+										className="mx-2 flex duration-500 transition-opacity text-white text-xl opacity-75 hover:opacity-100"
+										key={i}
+									>
+										<Link href={content.toLowerCase().split(" ")[0]}>
+											{content}
+										</Link>
+									</div>
+								);
+							})}
+						</motion.div>
+					)}
+				</AnimatePresence>
 			</div>
-			<AnimatePresence initial={false}>
-				{menuState && (
-					<motion.div
-						class="glass absolute p-4 rounded-lg bottom-full flex flex-row z-0"
-						initial={{ opacity: 0, x: -50 }}
-						animate={{ opacity: 1, x: 0 }}
-						exit={{ opacity: 0, x: 50 }}
-					>
-						{navContent.map((content, i) => {
-							return (
-								<div
-									className="mx-2 flex duration-500 transition-opacity text-white text-xl opacity-75 hover:opacity-100"
-									key={i}
-								>
-									<Link href={content.toLowerCase().split(" ")[0]}>
-										{content}
-									</Link>
-								</div>
-							);
-						})}
-					</motion.div>
-				)}
-			</AnimatePresence>
 		</>
 	);
 };
