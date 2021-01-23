@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import Tiers from "../components/tiers.json";
+import Tiers from "../../components/core/tiers.json";
 
 const PricingContent = () => {
 	const tiers = [];

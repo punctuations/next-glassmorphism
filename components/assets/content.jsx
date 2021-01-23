@@ -1,8 +1,8 @@
-import HomeContent from "../components/homeContent.jsx";
-import AboutContent from "../components/aboutContent.jsx";
-import PricingContent from "../components/pricingContent.jsx";
-import FeaturesContent from "../components/featuresContent.jsx";
-import CareersContent from "../components/careersContent.jsx";
+import HomeContent from "../../components/assets/homeContent.jsx";
+import AboutContent from "../../components/assets/aboutContent.jsx";
+import PricingContent from "../../components/assets/pricingContent.jsx";
+import FeaturesContent from "../../components/assets/featuresContent.jsx";
+import CareersContent from "../../components/assets/careersContent.jsx";
 
 const Content = ({ type }) => {
 	switch (type) {

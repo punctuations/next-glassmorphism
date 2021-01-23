@@ -1,6 +1,6 @@
-import Main from "../components/main.jsx";
-import Nav from "../components/nav.jsx";
-import Content from "../components/content.jsx";
+import Main from "../components/assets/main.jsx";
+import Nav from "../components/assets/nav.jsx";
+import Content from "../components/assets/content.jsx";
 
 export default function Pricing() {
 	return (

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import Features from "../components/features.json";
+import Features from "../../components/core/features.json";
 
 const FeaturesContent = () => {
 	const features = [];

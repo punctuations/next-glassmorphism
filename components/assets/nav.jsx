@@ -1,5 +1,5 @@
 import Link from "next/link";
-import navContent from "../components/navContent";
+import navContent from "../../components/core/navContent";
 
 const Nav = ({ name, logo }) => {
 	return (

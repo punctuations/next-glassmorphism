@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import Team from "../components/team";
+import Team from "../../components/core/team";
 
 const AboutContent = () => {
 	return (
