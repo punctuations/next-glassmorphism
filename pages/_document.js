@@ -8,9 +8,9 @@ class MyDocument extends Document {
 
 	render() {
 		return (
-			<Html lang="en">
+			<Html lang="en" className="w-screen h-screen overflow-y-auto">
 				<Head />
-				<body className="w-screen h-screen">
+				<body className="w-screen h-screen overflow-y-auto">
 					<Main />
 					<NextScript />
 				</body>
