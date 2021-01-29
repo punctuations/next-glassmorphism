@@ -100,7 +100,7 @@ const Nav = ({ name, logo }) => {
 							{navContent.map((content, i) => {
 								return (
 									<div
-										className="mx-2 flex duration-500 transition-opacity text-white md:text-xl sm:text-md text-sm opacity-75 hover:opacity-100"
+										className="mx-2 flex duration-500 transition-opacity text-white md:text-xl sm:text-md text-xs opacity-75 hover:opacity-100"
 										key={i}
 									>
 										<Link href={content.toLowerCase().split(" ")[0]}>
