@@ -1,5 +1,6 @@
 import Link from "next/link";
-import navContent from "../../components/core/navContent";
+import navContent from "../core/navContent";
+import { Toggle } from "../core/Toggle";
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -38,6 +39,7 @@ const Nav = ({ name, logo }) => {
 						</div>
 					);
 				})}
+				<Toggle />
 			</div>
 
 			<div className="rounded-md nav-glass z-20 sticky top-0 2xl:hidden xl:hidden lg:hidden md:flex sm:flex flex flex-row justify-evenly items-center h-16 w-full">
@@ -48,7 +50,7 @@ const Nav = ({ name, logo }) => {
 					</div>
 				</Link>
 				<div
-					className="glass p-2 rounded-md cursor-pointer select-none"
+					className="glass dark:glass-dark p-2 rounded-md cursor-pointer select-none"
 					onClick={() => setMenuState(!menuState)}
 				>
 					{menuState ? (
@@ -90,7 +92,7 @@ const Nav = ({ name, logo }) => {
 				<AnimatePresence initial={false}>
 					{menuState && (
 						<motion.div
-							className="glass absolute p-3 rounded-lg -top-3/4 flex flex-row z-20"
+							className="glass dark:glass-dark absolute p-3 rounded-lg -top-3/4 flex flex-row z-20"
 							initial={{ opacity: 0, x: -50 }}
 							animate={{ opacity: 1, x: 0 }}
 							exit={{ opacity: 0, x: 50 }}
@@ -107,6 +109,7 @@ const Nav = ({ name, logo }) => {
 									</div>
 								);
 							})}
+							<Toggle />
 						</motion.div>
 					)}
 				</AnimatePresence>

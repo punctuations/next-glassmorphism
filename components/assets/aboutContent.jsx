@@ -37,7 +37,7 @@ const AboutContent = () => {
 									ease: "easeInOut",
 								},
 							}}
-							className="mt-6 inline-flex rounded-lg glass shadow-2xl"
+							className="mt-6 inline-flex rounded-lg glass dark:glass-dark shadow-2xl"
 							key={i}
 						>
 							<a
@@ -50,7 +50,7 @@ const AboutContent = () => {
 									<img
 										className="w-20 h-20 rounded-full border-2 border-white"
 										src={member.split(",")[2]}
-										alt="matt"
+										alt={member.split(",")[0]}
 									/>
 									<figcaption className="text-center">
 										{member.split(",")[0]}

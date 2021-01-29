@@ -27,7 +27,7 @@ const PricingContent = () => {
 						<p className="text-gray-400">{Tiers.tiers[i].description}</p>
 					</div>
 					<motion.button
-						className="my-2 p-2 glass rounded-lg"
+						className="my-2 p-2 glass dark:glass-dark rounded-lg"
 						whileHover={{
 							scale: 1.03,
 							transition: {
@@ -50,7 +50,7 @@ const PricingContent = () => {
 						{Tiers.tiers[i].featured ? (
 							<motion.div
 								href="#"
-								className="flex flex-col cursor-default rounded-lg shadow-xl mx-4 p-4 glass text-white border-yellow-400"
+								className="flex flex-col cursor-default rounded-lg shadow-xl mx-4 p-4 glass dark:glass-dark text-white border-yellow-400"
 								key={i}
 								style={{ scale: 1.03 }}
 								initial={{
@@ -79,7 +79,7 @@ const PricingContent = () => {
 						) : (
 							<motion.div
 								href="#"
-								className="rounded-lg shadow-xl mx-4 p-4 glass text-white"
+								className="rounded-lg shadow-xl mx-4 p-4 glass dark:glass-dark text-white"
 								key={i}
 								initial={{
 									y: 20,

@@ -18,7 +18,7 @@ const FeaturesContent = () => {
 					<hr className="my-2 border-gray-300" />
 					<p className="text-gray-400">{Features.features[i].description}</p>
 					<motion.button
-						className="my-2 p-2 glass rounded-lg"
+						className="my-2 p-2 glass dark:glass-dark rounded-lg"
 						whileHover={{
 							scale: 1.03,
 							transition: {
@@ -40,7 +40,7 @@ const FeaturesContent = () => {
 					<>
 						<motion.div
 							href="#"
-							className="rounded-lg shadow-xl mx-4 p-4 glass text-white"
+							className="rounded-lg shadow-xl mx-4 p-4 glass dark:glass-dark text-white"
 							key={i}
 							initial={{
 								y: 20,
@@ -67,14 +67,6 @@ const FeaturesContent = () => {
 					</>
 				);
 			})}
-		</div>
-	);
-
-	return (
-		<div className="flex flex-row flex-grow justify-center items-center">
-			<div className="glass p-4 rounded-lg shadow-md text-white">Yo</div>
-			<div className="glass p-4 rounded-lg shadow-md text-white">Yo</div>
-			<div className="glass p-4 rounded-lg shadow-md text-white">Yo</div>
 		</div>
 	);
 };

@@ -35,7 +35,7 @@ const CareersContent = () => {
 			</header>
 			<footer className="flex justify-center items-center mt-16">
 				<motion.button
-					className="glass p-4 shadow-xl rounded-lg"
+					className="glass dark:glass-dark p-4 shadow-xl rounded-lg"
 					whileHover={{ scale: 1.03 }}
 				>
 					Apply Now
