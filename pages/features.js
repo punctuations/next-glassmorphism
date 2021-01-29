@@ -1,3 +1,5 @@
+import Head from "next/head";
+import { NextSeo } from "next-seo";
 import Main from "../components/assets/main.jsx";
 import Nav from "../components/assets/nav.jsx";
 import Content from "../components/assets/content.jsx";
