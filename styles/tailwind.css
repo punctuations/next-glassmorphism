@@ -7,14 +7,14 @@
 @layer utilities {
 	@variants dark {
 		.bg-image-dark {
-			background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.idownloadblog.com%2Fwp-content%2Fuploads%2F2020%2F06%2FmacOS-Big-Sur-Vector-Wave-Dark-Wallpaper-iDownloadBlog.jpg&f=1&nofb=1);
+			background-image: url(https://www.igeeksblog.com/wp-content/uploads/2020/06/macos-big-sur-vector-wave-dark-wallpaper-scaled.jpg);
 
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
 		.bg-image {
-			background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iphonetricks.org%2Fwp-content%2Fuploads%2F2020%2F06%2FmacOS-Big-Sur-wallpaper-2560x1440-1.jpg&f=1&nofb=1);
+			background-image: url(https://www.igeeksblog.com/wp-content/uploads/2020/06/macos-big-sur-vector-wave-light-wallpaper-scaled.jpg);
 
 			background-position: center;
 			background-repeat: no-repeat;
