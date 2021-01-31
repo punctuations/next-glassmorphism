@@ -10,7 +10,7 @@ const PricingContent = () => {
 			tiers.push(
 				<div
 					key={i}
-					className="justify-center flex flex-col flex-grow cursor-default"
+					className="justify-center 2xl:items-stretch xl:items-stretch lg:items-stretch md:items-stretch sm:items-stretch items-center flex flex-col flex-grow cursor-default"
 				>
 					{Tiers.tiers[i].featured ? (
 						<p className="2xl:text-sm xl:text-sm lg:text-sm md:text-xs sm:text-xs text-xs">
@@ -54,14 +54,14 @@ const PricingContent = () => {
 	}
 
 	return (
-		<div className="flex flex-row justify-center">
+		<div className="flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-row sm:flex-row flex-col justify-center">
 			{tiers.map((content, i) => {
 				return (
 					<>
 						{Tiers.tiers[i].featured ? (
 							<motion.div
 								href="#"
-								className="rounded-lg shadow-xl 2xl:mx-4 xl:mx-4 lg:mx-4 md:mx-2 sm:mx-1 mx-1 2xl:p-4 xl:p-4 lg:p-4 md:p-3 sm:p-2 p-1.5 glass dark:glass-dark text-white border-yellow-400"
+								className="rounded-lg shadow-xl 2xl:my-0 xl:my-0 lg:my-0 md:my-0 sm:my-0 my-1 2xl:mx-4 xl:mx-4 lg:mx-4 md:mx-2 sm:mx-1 mx-1 2xl:p-4 xl:p-4 lg:p-4 md:p-3 sm:p-2 p-1.5 glass dark:glass-dark text-white border-yellow-400"
 								key={i}
 								style={{ scale: 1.035 }}
 								initial={{
@@ -89,7 +89,7 @@ const PricingContent = () => {
 						) : (
 							<motion.div
 								href="#"
-								className="rounded-lg shadow-xl 2xl:mx-4 xl:mx-4 lg:mx-4 md:mx-2 sm:mx-1 mx-1 2xl:p-4 xl:p-4 lg:p-4 md:p-3 sm:p-2 p-2 glass dark:glass-dark text-white"
+								className="rounded-lg shadow-xl 2xl:my-0 xl:my-0 lg:my-0 md:my-0 sm:my-0 my-1 2xl:mx-4 xl:mx-4 lg:mx-4 md:mx-2 sm:mx-1 mx-1 2xl:p-4 xl:p-4 lg:p-4 md:p-3 sm:p-2 p-2 glass dark:glass-dark text-white"
 								key={i}
 								initial={{
 									y: 20,
