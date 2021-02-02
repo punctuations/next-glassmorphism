@@ -5,14 +5,16 @@ import Team from "../../components/core/team";
 const AboutContent = () => {
 	return (
 		<div className="text-white">
-			<div>
+			<div className="2xl:text-base xl:text-base lg:text-base md:text-sm sm:text-sm text-xs">
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur hic
 				totam perferendis, eius illum excepturi sint quos ad in qui. Alias
 				aliquam voluptatibus, nulla molestiae voluptatum odio quae
 				necessitatibus nemo.
 			</div>
 			<header className="flex justify-center items-center">
-				<h2 className="text-4xl name">Team</h2>
+				<h2 className="2xl:text-4xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl text-2xl name">
+					Team
+				</h2>
 			</header>
 			<div className="flex items-center justify-evenly">
 				{Team.map((member, i) => {
@@ -41,21 +43,21 @@ const AboutContent = () => {
 							key={i}
 						>
 							<a
-								className="p-6"
+								className="2xl:p-6 xl:p-6 lg:p-6 md:p-4 sm:p-4 p-2"
 								href={`https://twitter.com/${member.split(",")[1]}`}
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								<figure className="py-4 flex flex-col items-center">
 									<img
-										className="w-20 h-20 rounded-full border-2 border-white"
+										className="2xl:w-20 xl:w-20 lg:w-20 md:w-16 sm:w-16 w-16 2xl:h-20 xl:h-20 lg:h-20 md:h-16 sm:h-16 h-16 rounded-full border-2 border-white"
 										src={member.split(",")[2]}
 										alt={member.split(",")[0]}
 									/>
-									<figcaption className="text-center">
+									<figcaption className="text-center 2xl:text-base xl:text-base lg:text-base md:text-sm sm:text-sm text-xs">
 										{member.split(",")[0]}
 									</figcaption>
-									<figcaption className="text-gray-300">
+									<figcaption className="text-gray-300 2xl:text-base xl:text-base lg:text-base md:text-sm sm:text-sm text-xs">
 										Full-Stack JavaScript Engineer
 									</figcaption>
 								</figure>

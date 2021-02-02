@@ -12,13 +12,15 @@ const FeaturesContent = () => {
 					key={i}
 					className="justify-center flex flex-col flex-grow cursor-default"
 				>
-					<header className="text-3xl my-2">
+					<header className="2xl:text-3xl xl:text-3xl lg:text-3xl md:text-xl sm:text-xl text-lg 2xl:my-2 xl:my-2 lg:my-2 md:my-2 sm:my-1 my-0.5">
 						{Features.features[i].title}
 					</header>
 					<hr className="my-2 border-gray-300" />
-					<p className="text-gray-400">{Features.features[i].description}</p>
+					<p className="text-gray-400 2xl:text-base xl:text-base lg:text-base md:text-sm sm:text-sm text-xs">
+						{Features.features[i].description}
+					</p>
 					<motion.button
-						className="my-2 p-2 glass dark:glass-dark rounded-lg"
+						className="2xl:text-base xl:text-base lg:text-base md:text-sm sm:text-sm text-xs 2xl:my-2 xl:my-2 lg:my-2 md:my-2 sm:my-1 my-0.5 2xl:p-2 xl:p-2 lg:p-2 md:p-1.5 sm:p-1.5 p-1 glass dark:glass-dark 2xl:rounded-lg xl:rounded-lg lg:rounded-lg md:rounded-md sm:rounded-md rounded-sm"
 						whileHover={{
 							scale: 1.03,
 							transition: {
@@ -34,13 +36,13 @@ const FeaturesContent = () => {
 	}
 
 	return (
-		<div className="flex flex-row justify-center">
+		<div className="flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col justify-center">
 			{features.map((content, i) => {
 				return (
 					<>
 						<motion.div
 							href="#"
-							className="rounded-lg shadow-xl mx-4 p-4 glass dark:glass-dark text-white"
+							className="rounded-lg shadow-xl 2xl:mx-4 xl:mx-4 lg:mx-4 md:mx-2 sm:mx-1 mx-1 2xl:my-0 xl:my-0 lg:my-0 md:my-2 sm:my-1.5 my-1 2xl:p-4 xl:p-4 lg:p-4 md:p-3 sm:p-2 p-2 glass dark:glass-dark text-white"
 							key={i}
 							initial={{
 								y: 20,
