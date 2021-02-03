@@ -35,7 +35,7 @@ export default function Careers() {
 					cardType: "summary_large_image",
 				}}
 			/>
-			<main className="absolute w-full h-screen bg-orange-400 dark:bg-black bg-image dark:bg-image-dark flex items-center justify-center transition-all duration-500 overflow-aut">
+			<main className="absolute w-full h-full bg-orange-400 dark:bg-black bg-image dark:bg-image-dark flex items-center justify-center transition-all duration-500 overflow-auto">
 				<Main className="h-auto">
 					<Nav name="Lorem Ipsum" logo="/favicon.ico" />
 					<Content type="careers" />
