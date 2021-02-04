@@ -35,8 +35,8 @@ export default function Home() {
 					cardType: "summary_large_image",
 				}}
 			/>
-			<main className="absolute w-screen h-screen bg-orange-400 dark:bg-black bg-image dark:bg-image-dark flex items-center justify-center transition-all duration-500 overflow-hidden">
-				<Main className="overflow-auto">
+			<main className="absolute w-full h-full bg-orange-400 dark:bg-black bg-image dark:bg-image-dark flex items-center justify-center transition-all duration-500 overflow-hidden">
+				<Main>
 					<Nav name="Lorem Ipsum" logo="/favicon.ico" />
 					<Content type="home" />
 				</Main>

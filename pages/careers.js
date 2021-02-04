@@ -36,7 +36,7 @@ export default function Careers() {
 				}}
 			/>
 			<main className="absolute w-full h-full bg-orange-400 dark:bg-black bg-image dark:bg-image-dark flex items-center justify-center transition-all duration-500 overflow-auto">
-				<Main className="h-auto">
+				<Main>
 					<Nav name="Lorem Ipsum" logo="/favicon.ico" />
 					<Content type="careers" />
 				</Main>
