@@ -24,7 +24,7 @@ const CareersContent = () => {
 				</p>
 				<br />
 				<h3 className="2xl:text-xl xl:text-xl lg:text-xl md:text-lg sm:text-lg text-md">
-					Benfits:
+					Benefits:
 				</h3>
 				<p className="2xl:text-base xl:text-base lg:text-base md:text-sm sm:text-sm text-xs">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
