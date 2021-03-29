@@ -7,7 +7,7 @@
 @layer utilities {
 	@variants dark {
 		.bg-image-dark {
-			background-image: url(https://www.igeeksblog.com/wp-content/uploads/2020/06/macos-big-sur-vector-wave-dark-wallpaper-scaled.jpg);
+			background-image: url(https://wallpapercave.com/wp/wp7542097.jpg);
 
 			background-position: center;
 			background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 			background-attachment: fixed;
 		}
 		.bg-image {
-			background-image: url(https://www.igeeksblog.com/wp-content/uploads/2020/06/macos-big-sur-vector-wave-light-wallpaper-scaled.jpg);
+			background-image: url(https://wallpapercave.com/wp/wp7542081.jpg);
 
 			background-position: center;
 			background-repeat: no-repeat;
