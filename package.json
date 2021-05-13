@@ -12,7 +12,7 @@
     "framer-motion": "^3.2.1",
     "next": "10.0.5",
     "next-seo": "^4.19.0",
-    "postcss": "^8.2.4",
+    "postcss": "^8.2.10",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "tailwindcss": "^2.0.2"
